@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lexend Deca', sans-serif;
+    min-height: 100vh;
+    
+    font-size: 15px;
+    background-color: hsl(0, 0%, 95%);
+    font-weight: 400;
+}
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin: 2rem;
+}
+.grid{
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.box-1{
+    background-color: hsl(31, 77%, 52%);
+}
+.box-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.box-3{
+    background-color: hsl(179, 100%, 13%);
+}
+.col{
+    padding: 48px;
+}
+.col p{
+
+    line-height: 21px;
+    color: hsla(0, 0%, 100%, 0.75);
+    padding-bottom: 51px;
+}
+.col h1{
+    font-family: 'Big Shoulders Display', cursive;
+    color:hsl(0, 0%, 95%);
+    padding: 20px 0;
+}
+.col a{
+    background-color: hsl(0, 0%, 95%);
+    padding: 12px 27px;
+    text-decoration: none;
+    border-radius: 22px;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .4s ease-in-out;
+}
+.col a:hover{
+    background: transparent;
+    color: hsl(0, 0%, 95%);
+}
+.box-1 a{
+    color: hsl(31, 77%, 52%);
+}
+.box-2 a{
+    color: hsl(184, 100%, 22%);
+}
+.box-3 a{
+    color: hsl(179, 100%, 13%);
+}
+
+@media only screen and (max-width: 768px){
+    .grid{
+        grid-template-columns: 1fr;
+    }
+}
+@media only screen and (max-width: 768px){
+    .grid{
+        margin: 2rem 0.5rem
+    }
+}
+    
